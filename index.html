@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab04</title>
+
+    <style>
+        input[type="text"]{
+            border : none;
+            border-bottom:1px solid #000000;
+            background-color: transparent;
+        }
+        input[type="radio"]{
+            margin:6px;
+        }
+        
+        #submit_button{
+            background-color: transparent;
+            height:50px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Volunteer Form</h1>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+    <fieldset>
+        <legend>My Info</legend>
+        <label>First Name : <input type="text" name="first_name_field"></label>
+        <br>
+        <label>Last Name : <input type="text" name="last_name_field"></label>
+        <br>
+        <label>Phone Number : <input type="text" name="phone_field"></label>
+        <br>
+        <label>Email Address : <input type="text" name="email_field"></label>
+        <br>
+        <label>Gender : <input type="radio" name="gender_field" id="Male"><label for="Male">Male</label>
+        <input type="radio" name="gender_field" id="Female"><label for="Female">Female</label> </label>
+        <br>
+        <div style="display: flex; gap: 10px;">
+            <label>Age : </label>
+        <div> 
+            <input type="radio" name="age_field" id="under_18"><label for="under_18">under 18</label>
+            <br><input type="radio" name="age_field" id="18_24"><label for="18_24">18-24</label>
+            <br><input type="radio" name="age_field" id="25_34"><label for="25_34">25-34</label>
+            <br><input type="radio" name="age_field" id="35_44"><label for="35_44">35-44</label>
+            <br><input type="radio" name="age_field" id="45_54"><label for="45_54">45-54</label>
+            <br><input type="radio" name="age_field" id="55_64"><label for="55_64">55-64</label>
+            <br><input type="radio" name="age_field" id="65_and_over"><label for="65_and_over">65 and over</label>
+        </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>My Availability</legend>
+        <label>Days Available:</label> <br>
+        <input type="checkbox" id="Sun" name="available_field[]">
+        <label for="Sun">Sunday</label> <br>
+        <input type="checkbox" id="Mon" name="available_field[]">
+        <label for="Mon">Monday</label> <br>
+        <input type="checkbox" id="Tue" name="available_field[]">
+        <label for="Tue">Tuesday</label> <br>
+        <input type="checkbox" id="Wed" name="available_field[]">
+        <label for="Wed">Wednesday</label> <br>
+        <input type="checkbox" id="Thur" name="available_field[]">
+        <label for="Thur">Thursday</label> <br>
+        <input type="checkbox" id="Fri" name="available_field[]">
+        <label for="Fri">Friday</label> <br>
+        <input type="checkbox" id="Sat" name="available_field[]">
+        <label for="Sat">Saturday</label> <br>
+
+        <label style="margin-top:30px; margin-bottom:10px; display:block;" >Any Comments?</label>
+        <textarea name="commets_field" style="width: 200px;height:150px;"></textarea>
+       
+
+    </fieldset>
+    <input type="hidden" name="hidden_field" value="ykang22@hwak.iit.edu">
+    <input type="submit" id="submit_button" value="Send Me ">
+    </form>
+</body>
+</html>
